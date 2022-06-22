@@ -1,0 +1,93 @@
+.news__list{
+	display: flex;
+	flex-direction: column;
+}
+
+.news__list-item{
+	border-bottom: 2px solid black;
+	width: 100%;
+	max-height: 500px;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.news__list-img{
+	max-width: 250px;
+	max-height: 250px;
+	padding: 10px;
+	border-radius: 5%;
+	margin-bottom: 25px;
+	transition: 1s;
+}
+
+.news__list-img:hover{
+	transform: scale(1.2);
+}
+
+.news__list-description{
+	display: flex;
+}
+
+.news__list-text{
+	max-height: 300px;
+	padding: 0 25px;
+	overflow: hidden;
+	overflow-wrap: normal;
+	word-wrap: break-word;
+	word-break: break-all; 
+	line-break: auto; 
+}
+
+.news__list-name{
+	outline: 0px solid black;
+	border-radius: 5%;
+	display: inline-block;
+	color: black;
+	font-size: 25px;
+	text-decoration: none !important;
+	transition: 0.5s;
+}
+
+.news__list-name:hover{
+	color: red;
+	animation: border 0.5s ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes border {
+	from{
+		outline: 1px solid black;
+	}
+	10%{
+		outline: 2px solid black;
+	}
+	20%{
+		outline: 3px solid black;
+	}
+	30%{
+		outline: 4px solid black;
+	}
+	40%{
+		outline: 5px solid black;
+	}
+	50%{
+		outline: 6px solid black;
+	}
+	60%{
+		outline: 5px solid black;
+	}
+	70%{
+		outline: 4px solid black;
+	}
+	80%{
+		outline: 3px solid black;
+	}
+	90%{
+		outline: 2px solid black;
+	}
+	to{
+		outline: 0px solid black;
+	}
+}
